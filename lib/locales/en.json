@@ -1,0 +1,99 @@
+{
+    "nav": {
+        "about": "About",
+        "skills": "Skills",
+        "projects": "Projects",
+        "certificates": "Certificates",
+        "contact": "Contact"
+    },
+    "hero": {
+        "subtitle": "Junior Software Developer",
+        "description": "I was a teacher for young children (where I learned to have Jedi-level patience), I worked in a kitchen (where the recipe was always 'improvise or die'), I sold cars (without knowing about engines, but with a lot of drama)... and after a thousand jobs I discovered the most addictive of all: programming, where debugging is my new extreme sport.",
+        "contactButton": "Contact Me",
+        "viewWorkButton": "View My Work"
+    },
+    "about": {
+        "title": "About Me",
+        "p1": "Hi, I'm Jesús Gutiérrez García, and my journey into programming began in an unexpected place: teaching.",
+        "p2": "There I discovered the value of communication, patience, and adaptability—skills I now apply in software development.",
+        "p3": "My curiosity for technology led me to study for a Higher Level Certificate in Multiplatform Application Development at IES Ingeniero de la Cierva (2025). I later had the opportunity to intern at SEWAN, developing software for SD-WAN Box with Node.js and React.",
+        "p4": "During this time, I have worked with Java, Python, C#, JavaScript, TypeScript, Node.js, and React, as well as databases like MySQL, Oracle, SQL Server, PostgreSQL, and MongoDB. I also apply agile methodologies like Scrum and Kanban, design REST APIs, and use Docker to deploy projects.",
+        "p5": "Artificial Intelligence has become a great ally in my daily work, thanks to tools like GitHub Copilot, Cursor IDE, and ChatGPT.",
+        "p6": "Beyond the technical, I value my ability to explain complex ideas, work in a team, solve problems, and learn continuously.",
+        "p7": "In 2025, I was recognized with an Accésit in the Database specialty at the XV Informatics Olympiad of the Region of Murcia. Today, I continue to explore new technologies with a clear goal: to turn ideas into useful solutions and add value to every project.",
+        "p8": "It is also relevant to mention that I have a recognized 33% disability, which does not impact my mobility or my ability to fully carry out my professional duties. In fact, it has reinforced my resilience and my commitment to overcoming challenges."
+    },
+    "skills": {
+        "title": "Technical Skills",
+        "subtitle": "A snapshot of the languages, frameworks, and tools I work with."
+    },
+    "projects": {
+        "title": "My Projects",
+        "subtitle": "Here are a few projects I've worked on.",
+        "project1": {
+            "title": "CBLosTankes",
+            "description": "An Android Studio application created for a basketball team, designed to manage team information and activities."
+        },
+        "project2": {
+            "title": "BitClase",
+            "description": "A TFS project for managing attendance and materials in computer labs, developed using C#."
+        },
+        "project3": {
+            "title": "Curso-Node-RestServer",
+            "description": "A RESTful server built with Node.js and JavaScript, implementing various endpoints and functionalities."
+        },
+        "project4": {
+            "title": "PSP-IES-CIERVA",
+            "description": "A collection of small projects developed in Java, focused on processes, services, and programming."
+        },
+        "sourceCodeButton": "Source Code"
+    },
+    "certificates": {
+        "title": "Certificates & Titles",
+        "subtitle": "The titles and certificates throughout my life...",
+        "download": "Click to download",
+        "cert1": {
+            "title": "Degree in Early Childhood Education"
+        },
+        "cert2": {
+            "title": "Master's in Educational Research"
+        },
+        "cert3": {
+            "title": "Informatics Olympiad Award"
+        },
+        "cert4": {
+            "title": "Higher VET in App Development (DAM)"
+        }
+    },
+    "contact": {
+        "title": "Get In Touch",
+        "subtitle": "Have a question or want to work together? Feel free to reach out. I'm always open to new opportunities and collaborations.",
+        "form": {
+            "name": "Name",
+            "namePlaceholder": "Your Name",
+            "email": "Email",
+            "emailPlaceholder": "your.email@example.com",
+            "message": "Message",
+            "messagePlaceholder": "How can I help you?",
+            "button": "Send Message"
+        },
+        "validation": {
+            "name": "Name must be at least 2 characters.",
+            "email": "Please enter a valid email address.",
+            "message": "Message must be at least 10 characters."
+        },
+        "toast": {
+            "success": {
+                "title": "Message Sent!",
+                "description": "Thanks for reaching out. I'll get back to you soon."
+            },
+            "error": {
+                "title": "Uh oh! Something went wrong.",
+                "description": "There was a problem with your request. Please try again."
+            }
+        }
+    },
+    "footer": {
+        "rights": "All rights reserved."
+    }
+}

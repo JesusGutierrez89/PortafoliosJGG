@@ -1,0 +1,99 @@
+{
+    "nav": {
+        "about": "Sobre mí",
+        "skills": "Habilidades",
+        "projects": "Proyectos",
+        "certificates": "Certificados",
+        "contact": "Contacto"
+    },
+    "hero": {
+        "subtitle": "Desarrollador de software junior",
+        "description": "Fui profesor de niños pequeños (donde aprendí a tener paciencia nivel Jedi), pasé por la cocina (donde la receta era siempre ‘improvisa o muere’), vendí coches (sin saber de motores, pero con mucho teatro)… y después de mil oficios descubrí el más adictivo de todos: el de programador, donde el debugging es mi nuevo deporte extremo.",
+        "contactButton": "Contáctame",
+        "viewWorkButton": "Ver Mi Trabajo"
+    },
+    "about": {
+        "title": "Sobre Mí",
+        "p1": "Hola, soy Jesús Gutiérrez García y mi camino hacia la programación empezó en un lugar inesperado: el Magisterio.",
+        "p2": "Allí descubrí el valor de la comunicación, la paciencia y la adaptabilidad, habilidades que hoy aplico en el desarrollo de software.",
+        "p3": "Mi curiosidad por la tecnología me llevó a estudiar el Ciclo Superior en Desarrollo de Aplicaciones Multiplataforma en el IES Ingeniero de la Cierva (2025). Después tuve la oportunidad de realizar prácticas en SEWAN, desarrollando software para Caja SD-WAN con Node.js y React.",
+        "p4": "Durante este tiempo he trabajado con Java, Python, C#, JavaScript, TypeScript, Node.js y React, así como con bases de datos como MySQL, Oracle, SQL Server, PostgreSQL y MongoDB. También aplico metodologías ágiles como Scrum y Kanban, diseño APIs REST y utilizo Docker para desplegar proyectos.",
+        "p5": "La Inteligencia Artificial se ha convertido en una gran aliada en mi día a día, gracias a herramientas como GitHub Copilot, Cursor IDE y ChatGPT.",
+        "p6": "Más allá de lo técnico, valoro mi capacidad para explicar ideas complejas, trabajar en equipo, resolver problemas y aprender de forma constante.",
+        "p7": "En 2025 fui reconocido con un Accésit en la especialidad de Base de Datos en la XV Olimpiada Informática de la Región de Murcia. Hoy sigo explorando nuevas tecnologías con una meta clara: convertir las ideas en soluciones útiles y aportar valor en cada proyecto.",
+        "p8": "También es relevante mencionar que cuento con una discapacidad reconocida del 33%, la cual no afecta mi movilidad ni mi capacidad para desempeñar plenamente mis funciones profesionales. De hecho, ha reforzado mi resiliencia y mi compromiso para superar desafíos."
+    },
+    "skills": {
+        "title": "Habilidades Técnicas",
+        "subtitle": "Un vistazo a los lenguajes, frameworks y herramientas con las que trabajo."
+    },
+    "projects": {
+        "title": "Mis Proyectos",
+        "subtitle": "Aquí hay algunos proyectos en los que he trabajado.",
+        "project1": {
+            "title": "CBLosTankes",
+            "description": "Programa realizado con Android Studio sobre un equipo de baloncesto, diseñado para gestionar información y actividades del equipo."
+        },
+        "project2": {
+            "title": "BitClase",
+            "description": "Proyecto TFS sobre control de asistencia y de material de aulas de informática, se ha utilizado C#."
+        },
+        "project3": {
+            "title": "Curso-Node-RestServer",
+            "description": "Un servidor RESTful creado con Node.js y JavaScript, implementando varios endpoints y funcionalidades."
+        },
+        "project4": {
+            "title": "PSP-IES-CIERVA",
+            "description": "Colección de pequeños proyectos desarrollados en Java, centrados en procesos, servicios y programación."
+        },
+        "sourceCodeButton": "Código Fuente"
+    },
+    "certificates": {
+        "title": "Certificados y Títulos",
+        "subtitle": "Los títulos y certificados a lo largo de mi vida...",
+        "download": "Pulsa para descargar",
+        "cert1": {
+            "title": "Grado en Educación Infantil"
+        },
+        "cert2": {
+            "title": "Máster en Investigación Educativa"
+        },
+        "cert3": {
+            "title": "Premio en Olimpiada Informática"
+        },
+        "cert4": {
+            "title": "Técnico Superior en DAM"
+        }
+    },
+    "contact": {
+        "title": "Ponte en Contacto",
+        "subtitle": "¿Tienes alguna pregunta o quieres que trabajemos juntos? No dudes en contactarme. Siempre estoy abierto a nuevas oportunidades y colaboraciones.",
+        "form": {
+            "name": "Nombre",
+            "namePlaceholder": "Tu Nombre",
+            "email": "Email",
+            "emailPlaceholder": "tu.email@ejemplo.com",
+            "message": "Mensaje",
+            "messagePlaceholder": "¿Cómo puedo ayudarte?",
+            "button": "Enviar Mensaje"
+        },
+        "validation": {
+            "name": "El nombre debe tener al menos 2 caracteres.",
+            "email": "Por favor, introduce una dirección de correo electrónico válida.",
+            "message": "El mensaje debe tener al menos 10 caracteres."
+        },
+        "toast": {
+            "success": {
+                "title": "¡Mensaje Enviado!",
+                "description": "Gracias por contactar. Te responderé pronto."
+            },
+            "error": {
+                "title": "¡Uy! Algo salió mal.",
+                "description": "Hubo un problema con tu solicitud. Por favor, inténtalo de nuevo."
+            }
+        }
+    },
+    "footer": {
+        "rights": "Todos los derechos reservados."
+    }
+}

@@ -1,0 +1,34 @@
+{
+  "placeholderImages": [
+    {
+      "id": "profile",
+      "description": "Profile picture for Jesus Gutierrez Garcia",
+      "imageUrl": "https://www.dropbox.com/scl/fi/xkfaqlj8uc6kmhc9buyeg/FotoPortada.jpeg?rlkey=bi7mbmysebr5zzqzgh56un9lm&raw=1",
+      "imageHint": "male portrait glasses"
+    },
+    {
+      "id": "project-1",
+      "description": "Placeholder for CBLosTankes project",
+      "imageUrl": "https://www.dropbox.com/scl/fi/y2s88cfc7000zzft6pdfp/portada.jpg?rlkey=v9aq6jxx5kd9pzu4dtklavzey&raw=1",
+      "imageHint": "basketball app"
+    },
+    {
+      "id": "project-2",
+      "description": "Placeholder for BitClase project",
+      "imageUrl": "https://www.dropbox.com/scl/fi/w2u8uczjcycuol5j3snk2/bitClase-sinfondo-1.png?rlkey=5llcoe5hdgezcj7ifvxj3gss3&raw=1",
+      "imageHint": "classroom management"
+    },
+    {
+      "id": "project-3",
+      "description": "Placeholder for Curso-Node-RestServer project",
+      "imageUrl": "https://www.dropbox.com/scl/fi/k0uku0t4fkt90p1jpy85b/nodeBuena-removebg-preview.png?rlkey=3qxqwq3u4mj5pyk6tfkv2wam8&raw=1",
+      "imageHint": "backend code"
+    },
+    {
+      "id": "project-4",
+      "description": "Placeholder for PSP-IES-CIERVA project",
+      "imageUrl": "https://www.dropbox.com/scl/fi/nmy0w0ij0cjh8z49ltub3/java.png?rlkey=425u9uut7l4t58acb3upefx4g&raw=1",
+      "imageHint": "java code"
+    }
+  ]
+}
