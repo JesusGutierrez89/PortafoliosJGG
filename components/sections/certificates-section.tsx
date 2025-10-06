@@ -1,7 +1,7 @@
 'use client';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/context/language-context';
-import { Award, GraduationCap, Download } from 'lucide-react';
+import { Award, Download, GraduationCap } from 'lucide-react';
 import Link from 'next/link';
 
 export default function CertificatesSection() {
