@@ -27,6 +27,11 @@ export default function CertificatesSection() {
       title: t.certificates.cert4.title,
       url: "https://www.dropbox.com/scl/fi/pjx94ce43im40b9b91aml/CER_FPTJ_Certificado-de-Titulo-FPJes-s-Gut-rrez-Garc-a-tachado.pdf?rlkey=se5wuxn9xypofre12h8grf90k&raw=1",
       icon: <GraduationCap className="h-10 w-10 text-primary" />
+    },
+    {
+      title: t.certificates.cert5.title,
+      url: "https://www.dropbox.com/scl/fi/xs4z8spbeu8wbg7qh6dty/JESUS-_jesusgutierrezgarcia1989-gmail.com.pdf?rlkey=oi6ngkkblfrmeg1rqd1l3zo8g&raw=1",
+      icon: <Award className="h-10 w-10 text-primary" />
     }
   ];
 
