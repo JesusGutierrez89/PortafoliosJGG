@@ -1,13 +1,13 @@
 'use client';
-import { Code, Database, Server, PenTool, Wind, Component, GitMerge, TerminalSquare, Users, Kanban, Network, Container } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
-import { useLanguage } from '@/context/language-context';
 import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
+    Popover,
+    PopoverContent,
+    PopoverTrigger,
 } from "@/components/ui/popover";
 import { Progress } from "@/components/ui/progress";
+import { useLanguage } from '@/context/language-context';
+import { Code, Component, Container, Database, GitMerge, Kanban, Network, PenTool, Server, TerminalSquare, Users, Wind } from 'lucide-react';
 
 type SkillLevel = 'bajo' | 'medio' | 'alto';
 type ExperienceLevel = '<6 meses' | 'entre 1 y 2 años' | '>2 años';
@@ -57,17 +57,17 @@ export default function SkillsSection() {
   const { t } = useLanguage();
 
   return (
-    <section id="skills" className="w-full py-12 md:py-24 lg:py-32">
+    <section id="skills" className="w-full py-16 md:py-24 lg:py-32">
       <div className="container px-4 md:px-6">
-        <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <div className="space-y-2 mb-8">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">{t.skills.title}</h2>
-            <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+        <div className="flex flex-col items-center justify-center space-y-8 text-center">
+          <div className="space-y-4 mb-4">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline">{t.skills.title}</h2>
+            <p className="max-w-3xl text-muted-foreground text-base sm:text-lg md:text-xl leading-relaxed">
               {t.skills.subtitle}
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 sm:gap-6">
           {skills.map((skill) => {
             const knowledge = knowledgeMapping[skill.knowledge];
             const experience = experienceMapping[skill.experience];
@@ -75,29 +75,35 @@ export default function SkillsSection() {
             return(
             <Popover key={skill.name}>
               <PopoverTrigger asChild>
-                <Card className="flex flex-col items-center justify-center p-6 text-center transition-transform transform hover:scale-105 hover:shadow-lg cursor-pointer">
-                  <CardContent className="p-0 flex flex-col items-center justify-center space-y-3">
-                    {skill.icon}
-                    <p className="font-semibold text-lg">{skill.name}</p>
+                <Card className="flex flex-col items-center justify-center p-3 sm:p-4 lg:p-6 text-center transition-all duration-300 transform hover:scale-105 hover:shadow-xl cursor-pointer group">
+                  <CardContent className="p-0 flex flex-col items-center justify-center space-y-2 sm:space-y-3">
+                    <div className="transition-colors group-hover:text-primary">
+                      {skill.icon}
+                    </div>
+                    <p className="font-semibold text-sm sm:text-base lg:text-lg leading-tight">{skill.name}</p>
                   </CardContent>
                 </Card>
               </PopoverTrigger>
-              <PopoverContent className="w-80">
+              <PopoverContent className="w-72 sm:w-80" align="center">
                 <div className="grid gap-4">
                   <div className="space-y-2">
-                    <h4 className="font-medium leading-none">{skill.name}</h4>
+                    <h4 className="font-medium leading-none text-lg">{skill.name}</h4>
                   </div>
-                  <div className="grid gap-2">
-                    <div className="grid grid-cols-3 items-center gap-4">
-                      <span className="text-sm font-medium">Conocimiento</span>
-                      <Progress value={knowledge.value} className="col-span-2 h-2" />
+                  <div className="grid gap-3">
+                    <div className="space-y-2">
+                      <div className="flex justify-between items-center">
+                        <span className="text-sm font-medium">Conocimiento</span>
+                        <span className="text-sm text-muted-foreground">{knowledge.label}</span>
+                      </div>
+                      <Progress value={knowledge.value} className="h-2" />
                     </div>
-                    <p className="text-sm text-muted-foreground text-right">{knowledge.label}</p>
-                    <div className="grid grid-cols-3 items-center gap-4">
-                      <span className="text-sm font-medium">Experiencia</span>
-                      <Progress value={experience.value} className="col-span-2 h-2" />
+                    <div className="space-y-2">
+                      <div className="flex justify-between items-center">
+                        <span className="text-sm font-medium">Experiencia</span>
+                        <span className="text-sm text-muted-foreground">{experience.label}</span>
+                      </div>
+                      <Progress value={experience.value} className="h-2" />
                     </div>
-                    <p className="text-sm text-muted-foreground text-right">{experience.label}</p>
                   </div>
                 </div>
               </PopoverContent>

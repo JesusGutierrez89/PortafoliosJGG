@@ -4,13 +4,13 @@ import { useLanguage } from '@/context/language-context';
 export default function AboutSection() {
   const { t } = useLanguage();
     return (
-      <section id="about" className="w-full py-12 md:py-24 lg:py-32 bg-card">
+      <section id="about" className="w-full py-16 md:py-24 lg:py-32 bg-card">
         <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">{t.about.title}</h2>
-              <div className="space-y-4 max-w-[900px] text-muted-foreground text-justify md:text-lg/relaxed lg:text-lg/relaxed">
-                <p>
+          <div className="flex flex-col items-center justify-center space-y-8 text-center">
+            <div className="space-y-4">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline">{t.about.title}</h2>
+              <div className="space-y-4 max-w-4xl text-muted-foreground text-left sm:text-justify text-base sm:text-lg md:text-xl leading-relaxed">
+                <p className="first-letter:text-4xl first-letter:font-bold first-letter:text-primary first-letter:mr-1 first-letter:float-left first-letter:leading-none">
                   {t.about.p1}
                 </p>
                 <p>
