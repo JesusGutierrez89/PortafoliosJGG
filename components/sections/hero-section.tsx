@@ -63,9 +63,9 @@ export default function HeroSection() {
                 src={profileImage.imageUrl}
                 alt={profileImage.description}
                 data-ai-hint={profileImage.imageHint}
-                width={300}
-                height={300}
-                className="aspect-square overflow-hidden rounded-full object-cover w-64 h-64 sm:w-80 sm:h-80 lg:w-full lg:h-full lg:max-w-[400px] lg:max-h-[400px] shadow-2xl"
+                width={250}
+                height={250}
+                className="aspect-square overflow-hidden rounded-full object-cover w-48 h-48 sm:w-60 sm:h-60 lg:w-72 lg:h-72 xl:w-80 xl:h-80 shadow-2xl"
                 priority
               />
             </div>
