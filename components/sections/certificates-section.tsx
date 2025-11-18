@@ -36,35 +36,33 @@ export default function CertificatesSection() {
   ];
 
   return (
-    <section id="certificates" className="w-full py-16 md:py-24 lg:py-32">
+    <section id="certificates" className="w-full py-12 md:py-24 lg:py-32">
       <div className="container px-4 md:px-6">
-        <div className="flex flex-col items-center justify-center space-y-8 text-center">
-          <div className="space-y-4 mb-4">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline uppercase">{(t.nav as any).certificates}</h2>
-            <p className="max-w-3xl text-muted-foreground text-base sm:text-lg md:text-xl leading-relaxed">
+        <div className="flex flex-col items-center justify-center space-y-4 text-center">
+          <div className="space-y-2 mb-8">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline uppercase">{(t.nav as any).certificates}</h2>
+            <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               {t.certificates.subtitle}
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
           {certificates.map((cert, index) => (
             <Button
               key={index}
               asChild
               variant="outline"
-              className="group relative flex h-auto items-center justify-start gap-4 sm:gap-6 rounded-lg bg-card p-4 sm:p-6 text-left transition-all duration-300 hover:outline hover:outline-2 hover:outline-primary hover:shadow-lg hover:-translate-y-1"
+              className="group relative flex h-auto items-center justify-start gap-6 rounded-lg bg-card p-6 text-left transition-all duration-300 hover:outline hover:outline-1 hover:outline-primary"
             >
               <Link href={cert.url} target="_blank" download>
-                <div className="absolute left-0 top-0 h-full w-1 sm:w-1.5 bg-primary opacity-50 transition-all duration-300 group-hover:opacity-100 group-hover:w-2" />
-                <div className="pl-3 sm:pl-4 flex items-center gap-4 sm:gap-6 w-full">
-                  <div className="flex-shrink-0">
-                    {cert.icon}
+                <div className="absolute left-0 top-0 h-full w-1.5 bg-primary opacity-50 transition-opacity duration-300 group-hover:opacity-100" />
+                <div className="pl-4 flex items-center gap-6">
+                  {cert.icon}
+                  <div className="flex flex-col">
+                    <span className="text-lg font-semibold text-foreground">{cert.title}</span>
+                    <span className="text-sm text-muted-foreground">{t.certificates.download}</span>
                   </div>
-                  <div className="flex flex-col flex-grow min-w-0">
-                    <span className="text-base sm:text-lg font-semibold text-foreground leading-tight">{cert.title}</span>
-                    <span className="text-xs sm:text-sm text-muted-foreground">{t.certificates.download}</span>
-                  </div>
-                  <Download className="flex-shrink-0 h-5 w-5 sm:h-6 sm:w-6 text-muted-foreground transition-all duration-300 group-hover:text-primary group-hover:scale-110" />
+                  <Download className="ml-auto h-6 w-6 text-muted-foreground transition-colors group-hover:text-primary" />
                 </div>
               </Link>
             </Button>

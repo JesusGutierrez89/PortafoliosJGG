@@ -6,95 +6,6 @@
   html {
     @apply scroll-smooth;
   }
-  
-  * {
-    @apply border-border;
-  }
-  
-  body {
-    @apply bg-background text-foreground min-h-screen;
-  }
-}
-
-@layer utilities {
-  /* Responsive aspect ratios */
-  .aspect-video {
-    aspect-ratio: 16 / 9;
-  }
-  
-  .aspect-square {
-    aspect-ratio: 1 / 1;
-  }
-  
-  .aspect-4-3 {
-    aspect-ratio: 4 / 3;
-  }
-  
-  /* Image optimization utilities */
-  .img-responsive {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  
-  .img-contain {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-  
-  /* Project card improvements */
-  .project-card-image {
-    transition: transform 0.5s ease-in-out, filter 0.3s ease-in-out;
-  }
-  
-  .project-card-image:hover {
-    transform: scale(1.1);
-    filter: brightness(1.1);
-  }
-  
-  /* Responsive image containers */
-  .project-image-container {
-    position: relative;
-    width: 100%;
-    background-color: hsl(var(--muted));
-    overflow: hidden;
-  }
-  
-  /* Mobile optimizations */
-  @media (max-width: 640px) {
-    .project-image-container {
-      min-height: 200px;
-    }
-  }
-  
-  /* Tablet optimizations */
-  @media (min-width: 641px) and (max-width: 1024px) {
-    .project-image-container {
-      min-height: 240px;
-    }
-  }
-  
-  /* Desktop optimizations */
-  @media (min-width: 1025px) {
-    .project-image-container {
-      min-height: 280px;
-    }
-  }
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-  
-  .container-padding {
-    @apply px-4 sm:px-6 lg:px-8;
-  }
-  
-  .section-padding {
-    @apply py-16 md:py-24 lg:py-32;
-  }
 }
 
 @layer base {
@@ -132,5 +43,14 @@
     --sidebar-accent-foreground: 0 0% 96%;
     --sidebar-border: 0 0% 62%;
     --sidebar-ring: 169 100% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }

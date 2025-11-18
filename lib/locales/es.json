@@ -48,12 +48,6 @@
         },
         "sourceCodeButton": "Código Fuente"
     },
-    "recommendation": {
-        "title": "Carta de Recomendación",
-        "subtitle": "Descarga mi carta de recomendación profesional",
-        "download": "Pulsa para descargar",
-        "letterTitle": "Carta de Recomendación Profesional"
-    },
     "certificates": {
         "title": "Certificados y Títulos",
         "subtitle": "Los títulos y certificados a lo largo de mi vida...",

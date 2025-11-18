@@ -48,12 +48,6 @@
         },
         "sourceCodeButton": "Source Code"
     },
-    "recommendation": {
-        "title": "Recommendation Letter", 
-        "subtitle": "Download my professional recommendation letter",
-        "download": "Click to download",
-        "letterTitle": "Professional Recommendation Letter"
-    },
     "certificates": {
         "title": "Certificates & Titles",
         "subtitle": "The titles and certificates throughout my life...",
