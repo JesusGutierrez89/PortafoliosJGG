@@ -1,12 +1,12 @@
 'use client';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { useLanguage } from '@/context/language-context';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { ArrowUpRight } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowUpRight } from 'lucide-react';
-import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { useLanguage } from '@/context/language-context';
 
 export default function ProjectsSection() {
   const { t } = useLanguage();
@@ -39,6 +39,13 @@ export default function ProjectsSection() {
       description: (t.projects as any).project4.description,
       tags: ['Java', 'PSP'],
       sourceLink: 'https://github.com/JesusGutierrez89/PSP-IES-CIERVA',
+    },
+    {
+      id: 'project-5',
+      title: (t.projects as any).project5.title,
+      description: (t.projects as any).project5.description,
+      tags: ['Next.js', 'TypeScript', 'Firebase', 'Tailwind CSS'],
+      sourceLink: 'https://github.com/JesusGutierrez89/CruzadosVeraCruzWeb',
     },
   ];
 

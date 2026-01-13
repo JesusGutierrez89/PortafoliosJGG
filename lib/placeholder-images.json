@@ -29,6 +29,12 @@
       "description": "Placeholder for PSP-IES-CIERVA project",
       "imageUrl": "https://www.dropbox.com/scl/fi/nmy0w0ij0cjh8z49ltub3/java.png?rlkey=425u9uut7l4t58acb3upefx4g&raw=1",
       "imageHint": "java code"
+    },
+    {
+      "id": "project-5",
+      "description": "Placeholder for Cruzados de la Vera Cruz project",
+      "imageUrl": "https://www.dropbox.com/scl/fi/f8dcx3ybd78c4tuxwnuux/caballero-removebg-preview.png?rlkey=qam0upbsrnb2t95xy43bpd97l&st=7ip437lw&raw=1",
+      "imageHint": "knight templar armor sword crusader medieval warrior"
     }
   ]
 }

@@ -46,6 +46,10 @@
             "title": "PSP-IES-CIERVA",
             "description": "Colección de pequeños proyectos desarrollados en Java, centrados en procesos, servicios y programación."
         },
+        "project5": {
+            "title": "Cruzados de la Vera Cruz WEB",
+            "description": "Pagina web desarrollada con Next.js, TypeScript y Firebase. Sistema de gestión completo con autenticación y dashboard interactivo."
+        },
         "sourceCodeButton": "Código Fuente"
     },
     "certificates": {
