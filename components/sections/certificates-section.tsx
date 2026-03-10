@@ -32,6 +32,11 @@ export default function CertificatesSection() {
       title: t.certificates.cert5.title,
       url: "https://www.dropbox.com/scl/fi/xs4z8spbeu8wbg7qh6dty/JESUS-_jesusgutierrezgarcia1989-gmail.com.pdf?rlkey=oi6ngkkblfrmeg1rqd1l3zo8g&raw=1",
       icon: <Award className="h-10 w-10 text-primary" />
+    },
+    {
+      title: t.certificates.cert6.title,
+      url: "https://www.dropbox.com/scl/fi/l3jzru4op3bdx5zg7ms16/MASTER-en-JavaScript-2026.pdf?rlkey=p1dgiltx5j92z1pqn088318uq&st=iqel53e7&raw=1",
+      icon: <Award className="h-10 w-10 text-primary" />
     }
   ];
 
