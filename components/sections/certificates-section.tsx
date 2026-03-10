@@ -57,14 +57,14 @@ export default function CertificatesSection() {
               key={index}
               asChild
               variant="outline"
-              className="group relative flex h-auto items-center justify-start gap-6 rounded-lg bg-card p-6 text-left transition-all duration-300 hover:outline hover:outline-1 hover:outline-primary"
+              className="group relative flex h-auto items-center justify-start gap-6 rounded-lg bg-card p-6 text-left whitespace-normal transition-all duration-300 hover:outline hover:outline-1 hover:outline-primary"
             >
-              <Link href={cert.url} target="_blank" download>
+              <Link href={cert.url} target="_blank" download className="w-full h-auto">
                 <div className="absolute left-0 top-0 h-full w-1.5 bg-primary opacity-50 transition-opacity duration-300 group-hover:opacity-100" />
                 <div className="pl-4 flex items-center gap-4 w-full min-w-0">
                   <div className="flex-shrink-0">{cert.icon}</div>
                   <div className="flex flex-col min-w-0 flex-1">
-                    <span className="text-base font-semibold text-foreground break-words leading-snug">{cert.title}</span>
+                    <span className="text-base font-semibold text-foreground whitespace-normal break-words leading-snug">{cert.title}</span>
                     <span className="text-sm text-muted-foreground">{t.certificates.download}</span>
                   </div>
                   <Download className="flex-shrink-0 ml-2 h-6 w-6 text-muted-foreground transition-colors group-hover:text-primary" />
