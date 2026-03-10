@@ -78,8 +78,8 @@ export default function Header() {
                 <span className="sr-only">Abrir menú</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[260px] pt-10">
-              <nav className="flex flex-col gap-5 mt-4">
+            <SheetContent side="right" className="w-[80vw] max-w-[300px] pt-10 px-6">
+              <nav className="flex flex-col gap-5 mt-4 w-full">
                 {navLinks.map((link) => (
                   <Link
                     key={link.href}
@@ -90,9 +90,9 @@ export default function Header() {
                     {link.label}
                   </Link>
                 ))}
-                <Button asChild className="mt-4 w-full">
+                <Button asChild size="lg" className="mt-4 w-full">
                   <Link href={cvUrl} target="_blank" download="CV-Jesus-Gutierrez.pdf" onClick={() => setOpen(false)}>
-                    <FileDown className="mr-2 h-4 w-4" />
+                    <FileDown className="mr-2 h-5 w-5" />
                     Descargar CV
                   </Link>
                 </Button>
