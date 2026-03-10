@@ -1,6 +1,6 @@
 'use client';
 import { useLanguage } from '@/context/language-context';
-import { Phone, Mail } from 'lucide-react';
+import { Mail, Phone } from 'lucide-react';
 
 export default function ContactSection() {
   const { t } = useLanguage();
@@ -18,9 +18,9 @@ export default function ContactSection() {
                 <Phone className="h-5 w-5 text-primary" />
                 <a href="tel:615018208" className="text-lg font-medium hover:underline">615 01 82 08</a>
             </div>
-            <div className="flex items-center gap-2">
-                <Mail className="h-5 w-5 text-primary" />
-                <a href="mailto:jesusgutierrezgarcia1989@gmail.com" className="text-lg font-medium hover:underline">jesusgutierrezgarcia1989@gmail.com</a>
+            <div className="flex items-center gap-2 min-w-0">
+                <Mail className="h-5 w-5 text-primary flex-shrink-0" />
+                <a href="mailto:jesusgutierrezgarcia1989@gmail.com" className="text-lg font-medium hover:underline break-all">jesusgutierrezgarcia1989@gmail.com</a>
             </div>
         </div>
       </div>

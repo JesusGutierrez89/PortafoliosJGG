@@ -61,13 +61,13 @@ export default function CertificatesSection() {
             >
               <Link href={cert.url} target="_blank" download>
                 <div className="absolute left-0 top-0 h-full w-1.5 bg-primary opacity-50 transition-opacity duration-300 group-hover:opacity-100" />
-                <div className="pl-4 flex items-center gap-6">
-                  {cert.icon}
-                  <div className="flex flex-col">
-                    <span className="text-lg font-semibold text-foreground">{cert.title}</span>
+                <div className="pl-4 flex items-center gap-4 w-full min-w-0">
+                  <div className="flex-shrink-0">{cert.icon}</div>
+                  <div className="flex flex-col min-w-0 flex-1">
+                    <span className="text-base font-semibold text-foreground break-words leading-snug">{cert.title}</span>
                     <span className="text-sm text-muted-foreground">{t.certificates.download}</span>
                   </div>
-                  <Download className="ml-auto h-6 w-6 text-muted-foreground transition-colors group-hover:text-primary" />
+                  <Download className="flex-shrink-0 ml-2 h-6 w-6 text-muted-foreground transition-colors group-hover:text-primary" />
                 </div>
               </Link>
             </Button>

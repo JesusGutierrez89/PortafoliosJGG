@@ -1,12 +1,15 @@
 'use client';
-import Link from 'next/link';
-import Image from 'next/image';
-import { MountainIcon, FileDown } from 'lucide-react';
 import { useLanguage } from '@/context/language-context';
+import { FileDown, Menu, MountainIcon } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useState } from 'react';
 import { Button } from './ui/button';
+import { Sheet, SheetContent, SheetTrigger } from './ui/sheet';
 
 export default function Header() {
   const { t, setLanguage } = useLanguage();
+  const [open, setOpen] = useState(false);
 
   const navLinks = [
     { href: '#about', label: t.nav.about },
@@ -27,7 +30,8 @@ export default function Header() {
           <MountainIcon className="h-6 w-6" />
           <span className="font-bold sm:inline-block">J.G.G.</span>
         </Link>
-        <nav className="flex flex-1 items-center gap-4 text-sm sm:gap-6">
+        {/* Nav escritorio */}
+        <nav className="hidden md:flex flex-1 items-center gap-4 text-sm lg:gap-6">
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -38,41 +42,63 @@ export default function Header() {
             </Link>
           ))}
         </nav>
-        <div className="flex items-center gap-2">
-            <Button asChild>
-                <Link href={cvUrl} target="_blank" download="CV-Jesus-Gutierrez.pdf">
+
+        {/* Acciones escritorio */}
+        <div className="hidden md:flex items-center gap-2 ml-auto">
+          <Button asChild>
+            <Link href={cvUrl} target="_blank" download="CV-Jesus-Gutierrez.pdf">
+              <FileDown className="mr-2 h-4 w-4" />
+              Descargar CV
+            </Link>
+          </Button>
+          <Button variant="ghost" onClick={() => setLanguage('es')} className="h-10 w-10 p-0 rounded-full">
+            <Image src={esFlagUrl} alt="Bandera de España" width={36} height={36} className="rounded-full" />
+            <span className="sr-only">Español</span>
+          </Button>
+          <Button variant="ghost" onClick={() => setLanguage('en')} className="h-10 w-10 p-0 rounded-full">
+            <Image src={ukFlagUrl} alt="Bandera de Reino Unido" width={36} height={36} className="rounded-full" />
+            <span className="sr-only">English</span>
+          </Button>
+        </div>
+
+        {/* Acciones móvil: banderas + hamburguesa */}
+        <div className="flex md:hidden ml-auto items-center gap-1">
+          <Button variant="ghost" onClick={() => setLanguage('es')} className="h-8 w-8 p-0 rounded-full">
+            <Image src={esFlagUrl} alt="Bandera de España" width={28} height={28} className="rounded-full" />
+            <span className="sr-only">Español</span>
+          </Button>
+          <Button variant="ghost" onClick={() => setLanguage('en')} className="h-8 w-8 p-0 rounded-full">
+            <Image src={ukFlagUrl} alt="Bandera de Reino Unido" width={28} height={28} className="rounded-full" />
+            <span className="sr-only">English</span>
+          </Button>
+          <Sheet open={open} onOpenChange={setOpen}>
+            <SheetTrigger asChild>
+              <Button variant="ghost" size="icon">
+                <Menu className="h-5 w-5" />
+                <span className="sr-only">Abrir menú</span>
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-[260px] pt-10">
+              <nav className="flex flex-col gap-5 mt-4">
+                {navLinks.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    onClick={() => setOpen(false)}
+                    className="text-lg font-medium text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+                <Button asChild className="mt-4 w-full">
+                  <Link href={cvUrl} target="_blank" download="CV-Jesus-Gutierrez.pdf" onClick={() => setOpen(false)}>
                     <FileDown className="mr-2 h-4 w-4" />
                     Descargar CV
-                </Link>
-            </Button>
-            <Button
-              variant="ghost"
-              onClick={() => setLanguage('es')}
-              className="h-10 w-10 p-0 rounded-full"
-            >
-              <Image
-                src={esFlagUrl}
-                alt="Bandera de España"
-                width={36}
-                height={36}
-                className="rounded-full"
-              />
-              <span className="sr-only">Español</span>
-            </Button>
-            <Button
-              variant="ghost"
-              onClick={() => setLanguage('en')}
-              className="h-10 w-10 p-0 rounded-full"
-            >
-              <Image
-                src={ukFlagUrl}
-                alt="Bandera de Reino Unido"
-                width={36}
-                height={36}
-                className="rounded-full"
-              />
-              <span className="sr-only">English</span>
-            </Button>
+                  </Link>
+                </Button>
+              </nav>
+            </SheetContent>
+          </Sheet>
         </div>
       </div>
     </header>
