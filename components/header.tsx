@@ -92,10 +92,16 @@ export default function Header() {
                 ))}
               </nav>
               <div className="pb-6 pt-4">
-                <Button asChild size="default" className="w-full">
-                  <Link href={cvUrl} target="_blank" download="CV-Jesus-Gutierrez.pdf" onClick={() => setOpen(false)}>
-                    <FileDown className="mr-2 h-4 w-4 flex-shrink-0" />
-                    Descargar CV
+                <Button asChild size="default" className="w-full h-auto whitespace-normal py-3">
+                  <Link
+                    href={cvUrl}
+                    target="_blank"
+                    download="CV-Jesus-Gutierrez.pdf"
+                    onClick={() => setOpen(false)}
+                    className="flex w-full items-center justify-center gap-2 text-center leading-tight break-words"
+                  >
+                    <FileDown className="h-4 w-4 flex-shrink-0" />
+                    <span>Descargar CV</span>
                   </Link>
                 </Button>
               </div>
