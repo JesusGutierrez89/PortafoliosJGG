@@ -10,7 +10,7 @@ export default function HeroSection() {
   const { t } = useLanguage();
   const profileImage = PlaceHolderImages.find((img) => img.id === "profile");
   const cvUrl =
-    "https://www.dropbox.com/scl/fi/uvb4o5dm6n3w5btqvncyh/CV_JesusGutierrezGarcia.pdf?rlkey=fj70noujdqza508ze5kfets0f&st=478kdgp0&dl=0";
+    "https://www.dropbox.com/scl/fi/uvb4o5dm6n3w5btqvncyh/CV_JesusGutierrezGarcia.pdf?rlkey=fj70noujdqza508ze5kfets0f&st=478kdgp0&raw=1";
 
   return (
     <section id="home" className="w-full py-16 md:py-24 lg:py-32 xl:py-48">

@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export default function Footer() {
   const { t } = useLanguage();
-  const cvUrl = "https://www.dropbox.com/scl/fi/uvb4o5dm6n3w5btqvncyh/CV_JesusGutierrezGarcia.pdf?rlkey=fj70noujdqza508ze5kfets0f&st=478kdgp0&dl=0";
+  const cvUrl = "https://www.dropbox.com/scl/fi/uvb4o5dm6n3w5btqvncyh/CV_JesusGutierrezGarcia.pdf?rlkey=fj70noujdqza508ze5kfets0f&st=478kdgp0&raw=1";
   
   return (
     <footer className="w-full border-t bg-card text-card-foreground">
