@@ -21,7 +21,7 @@ export default function Header() {
   ];
 
   const cvUrl =
-    "https://www.dropbox.com/scl/fi/3hq58byzhqnhr7oegqvt1/CVJes-sGutierrez.pdf?rlkey=lr05l5qtsspaqkfmtmdw0hfuv&raw=1";
+    "https://www.dropbox.com/scl/fi/uvb4o5dm6n3w5btqvncyh/CV_JesusGutierrezGarcia.pdf?rlkey=fj70noujdqza508ze5kfets0f&st=478kdgp0&dl=0";
   const esFlagUrl =
     "https://www.dropbox.com/scl/fi/8kviocmhoclbpr6znaz1d/espana.png?rlkey=7hlo2eguogirh9il6t0cx60op&raw=1";
   const ukFlagUrl =

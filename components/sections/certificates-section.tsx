@@ -10,12 +10,12 @@ export default function CertificatesSection() {
   const certificates = [
     {
       title: t.certificates.cert1.title,
-      url: "https://www.dropbox.com/scl/fi/flhxnrpd7h9o7rwm45oum/Resguardo-titulo-Grado-educaci-n-infantil-DNItapado.pdf?rlkey=nykyz2a5w2wlwiae86893e4l8&raw=1",
+      url: "https://www.dropbox.com/scl/fi/eansm0knjm5bqp0txjvgb/Resguardo-titulo-Grado-educaci-n-infantil-DNItapado.pdf?rlkey=gvx78yvwjjnyxeo0pel45oneh&st=x082wakz&raw=1",
       icon: <GraduationCap className="h-10 w-10 text-primary" />
     },
     {
       title: t.certificates.cert2.title,
-      url: "https://www.dropbox.com/scl/fi/fpx9jfvgh6v1w215mkp6t/Resguardo-titulo-master-investigaci-n-DNItapado.pdf?rlkey=zdxxwadhbbcic1uy3ad7ur86l&raw=1",
+      url: "https://www.dropbox.com/scl/fi/rmpl8budzbxibetj70kki/Resguardo-titulo-master-investigaci-n-DNItapado.pdf?rlkey=x3hnur8zlzrskhadsd7vo0ery&st=equzoame&raw=1",
       icon: <GraduationCap className="h-10 w-10 text-primary" />
     },
     {
@@ -25,7 +25,7 @@ export default function CertificatesSection() {
     },
     {
       title: t.certificates.cert4.title,
-      url: "https://www.dropbox.com/scl/fi/pjx94ce43im40b9b91aml/CER_FPTJ_Certificado-de-Titulo-FPJes-s-Gut-rrez-Garc-a-tachado.pdf?rlkey=se5wuxn9xypofre12h8grf90k&raw=1",
+      url: "https://www.dropbox.com/scl/fi/v8zjkrrsiwp8qyiyqbzks/Titulo-FPJes-s-Gut-rrez-Garc-a-tachado.pdf?rlkey=do1v7fxtbm2galk4zzq9jl2cy&st=wtryp4fo&raw=1",
       icon: <GraduationCap className="h-10 w-10 text-primary" />
     },
     {
@@ -35,7 +35,12 @@ export default function CertificatesSection() {
     },
     {
       title: t.certificates.cert6.title,
-      url: "https://www.dropbox.com/scl/fi/l3jzru4op3bdx5zg7ms16/MASTER-en-JavaScript-2026.pdf?rlkey=p1dgiltx5j92z1pqn088318uq&st=iqel53e7&raw=1",
+      url: "https://www.dropbox.com/scl/fi/pi9mpwb1r4m7eoeul572l/MASTER-en-JavaScript-2026.pdf?rlkey=idz87fvvdqglo5dh5s9mogsjr&st=u3ezb6i2&raw=1",
+      icon: <Award className="h-10 w-10 text-primary" />
+    },
+    {
+      title: "Certificado Ciberseguridad y Hacking Ético",
+      url: "https://www.dropbox.com/scl/fi/ei17qotb65xfqffkmrkfb/Certificado_CiberSeguridad.pdf?rlkey=b2jtdfx9hd0n168h88m64skjo&st=299mq20d&raw=1",
       icon: <Award className="h-10 w-10 text-primary" />
     }
   ];

@@ -1,12 +1,12 @@
 'use client';
-import Link from 'next/link';
-import { Github, Linkedin, Mail, FileDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/context/language-context';
+import { FileDown, Github, Linkedin, Mail } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Footer() {
   const { t } = useLanguage();
-  const cvUrl = "https://www.dropbox.com/scl/fi/3hq58byzhqnhr7oegqvt1/CVJes-sGutierrez.pdf?rlkey=lr05l5qtsspaqkfmtmdw0hfuv&raw=1";
+  const cvUrl = "https://www.dropbox.com/scl/fi/uvb4o5dm6n3w5btqvncyh/CV_JesusGutierrezGarcia.pdf?rlkey=fj70noujdqza508ze5kfets0f&st=478kdgp0&dl=0";
   
   return (
     <footer className="w-full border-t bg-card text-card-foreground">
