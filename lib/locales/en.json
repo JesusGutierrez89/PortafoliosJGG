@@ -95,6 +95,9 @@
     },
     "cert7": {
       "title": "Cybersecurity and Ethical Hacking Certificate"
+    },
+    "cert8": {
+      "title": "Hexagonal Architecture in C# .NET"
     }
   },
   "contact": {

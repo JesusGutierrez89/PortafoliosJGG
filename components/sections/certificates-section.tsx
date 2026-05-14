@@ -42,6 +42,11 @@ export default function CertificatesSection() {
       title: t.certificates.cert7.title,
       url: "https://www.dropbox.com/scl/fi/ei17qotb65xfqffkmrkfb/Certificado_CiberSeguridad.pdf?rlkey=b2jtdfx9hd0n168h88m64skjo&st=299mq20d&raw=1",
       icon: <Award className="h-10 w-10 text-primary" />
+    },
+    {
+      title: t.certificates.cert8.title,
+      url: "https://www.dropbox.com/scl/fi/dxyyp6fepgmx1utkkkuki/Arquitectura-Hexagonal-en-C-.NET.pdf?rlkey=0l6yiqk6hmoxcm877o55zxf5v&st=8c8oe9f7&raw=1",
+      icon: <Award className="h-10 w-10 text-primary" />
     }
   ];
 
